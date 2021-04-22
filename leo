@@ -26,8 +26,8 @@ except user_interrupt_errors as error:
 
 TARGET_LANG = 'de'
 
-COUNTRY_CODES = {'de', 'en', 'fr', 'es', 'pt', 'ru'}
-LANGUAGES = {'fr': 'French', 'de': 'German', 'es': 'Spanish', 'en': 'English', 'ru': 'Russian', 'pt': 'Portuguese'}
+COUNTRY_CODES = {'de', 'en', 'fr', 'es', 'pt', 'ru', 'ch', 'pl'}
+LANGUAGES = {'fr': 'French', 'de': 'German', 'es': 'Spanish', 'en': 'English', 'ru': 'Russian', 'pt': 'Portuguese', 'ch': 'Chinese', 'pl': 'polish'}
 
 POS_CLI_TO_LEO = {'v': 'verb', 'n': 'noun', 'adj': 'adjective'}
 
