@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
-
 import sys
 
 user_interrupt_errors = (KeyboardInterrupt,)
@@ -13,11 +11,7 @@ else:
 try:
     from argparse import ArgumentParser
     from collections import defaultdict
-    # python 2 only
-    try:
-        import itertools.izip as zip
-    except ImportError:
-        pass
+
     import requests
     import time
 
@@ -237,7 +231,7 @@ def _format_multiple_adjective_cases(case_name, radical, adj):
 
     cases = []
     for gender in ['sm', 'sf', 'sn']:
-        cases.append("%s %s%s" % (gender_arts[gender], radical, gender_endings[gender]))
+        cases.append("{} {}{}".format(gender_arts[gender], radical, gender_endings[gender]))
 
     return {'name': case_name, 'value': "/".join(cases)}
 
@@ -286,7 +280,7 @@ def _get_tables(entries, verbose=False):
     url2translations = {}
     langs = set()
     for entry in entries:
-        target_side = next((side for side in entry['sides'] if side["lang"] == TARGET_LANG))
+        target_side = next(side for side in entry['sides'] if side["lang"] == TARGET_LANG)
         url = target_side['inflect_url']
         if url is None or url in url2translations:
             continue
