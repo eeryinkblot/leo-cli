@@ -19,14 +19,14 @@ pip install leo-cli --upgrade
 ## Usage:
 
     leo -h
-    usage: leo [-h] [-l {en,pt,fr,de,es,ru,ch,pl}] [-i] [-p {all,n,v,adj}] [-d] [-v]
+    usage: leo [-h] [-l {en,pt,fr,de,es,ru,it,ch,pl}] [-i] [-p {all,n,v,adj}] [-d] [-v]
                words [words ...]
     Retrieve word information via the Leo website
     positional arguments:
       words                 the words to look up on the LEO website
     optional arguments:
       -h, --help            show this help message and exit
-      -l {en,pt,fr,de,es,ru,ch,pl}, --lang {en,pt,fr,de,es,ru,ch,pl}
+      -l {en,pt,fr,de,es,ru,it,ch,pl}, --lang {en,pt,fr,de,es,ru,it,ch,pl}
                             source language, 2 chars (e.g. 'en')
       -i, --inflect         print inflection tables for all homonyms
       -p {all,n,v,adj}, --pos {all,n,v,adj}
